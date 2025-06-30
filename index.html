@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pequeñas Tentaciones - Mini Donas</title>
+  <style>
+    /* ESTILOS GENERALES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: #fff5f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    /* ENCABEZADO */
+    header {
+      background-color: #ff7eb9;
+      padding: 25px 20px;
+      color: white;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: contain;
+      border: 3px solid white;
+      margin-bottom: 15px;
+      background-color: white;
+      padding: 10px;
+    }
+    
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    
+    .horario {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    
+    /* GALERÍA DE PRODUCTOS */
+    .galeria {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    
+    .galeria-titulo {
+      text-align: center;
+      color: #d63384;
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+    }
+    
+    .productos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    
+    .producto {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+    
+    .producto-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px 10px 0 0;
+    }
+    
+    /* SECCIONES DE MENÚ */
+    .menu-section {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    
+    .menu-section h2 {
+      text-align: center;
+      color: #d63384;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+    
+    .menu-img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: block;
+      margin: 0 auto;
+    }
+    
+    /* PIE DE PÁGINA */
+    footer {
+      background-color: #ffb3c6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 0.95rem;
+    }
+    
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .productos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      }
+      
+      .producto-img {
+        height: 180px;
+      }
+      
+      .horario {
+        position: static;
+        margin-top: 15px;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ENCABEZADO CON HORARIO -->
+  <header>
+    <div class="horario">
+      🕒 Horario: 8AM a 4PM
+    </div>
+    <img src="logo.png" alt="Logo Pequeñas Tentaciones" class="logo">
+    <h1>Pequeñas Tentaciones</h1>
+    <p>¡Mini donas irresistibles con los toppings que más te gustan!</p>
+  </header>
+
+  <!-- GALERÍA DE PRODUCTOS SIN NOMBRES -->
+  <section class="galeria">
+    <h2 class="galeria-titulo">Nuestras Delicias</h2>
+    <div class="productos-grid">
+      <!-- Producto 1 -->
+      <div class="producto">
+        <img src="dona1.jpg" alt="Mini donas de chocolate" class="producto-img" loading="lazy">
+      </div>
+      
+      <!-- Producto 2 -->
+      <div class="producto">
+        <img src="dona2.jpg" alt="Mini donas de fresa" class="producto-img" loading="lazy">
+      </div>
+      
+      <!-- Producto 3 -->
+      <div class="producto">
+        <img src="dona3.jpg" alt="Mini donas de vainilla" class="producto-img" loading="lazy">
+      </div>
+      
+      <!-- Producto 4 -->
+      <div class="producto">
+        <img src="dona4.jpg" alt="Mini donas con nutella" class="producto-img" loading="lazy">
+      </div>
+      
+      <!-- Producto 5 -->
+      <div class="producto">
+        <img src="dona5.jpg" alt="Mini donas de coco" class="producto-img" loading="lazy">
+      </div>
+      
+      <!-- Producto 6 -->
+      <div class="producto">
+        <img src="dona6.jpg" alt="Mini donas de oreo" class="producto-img" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÚ DE PRECIOS -->
+  <section class="menu-section">
+    <h2>Nuestros Precios</h2>
+    <img src="menu1.jpg" alt="Menú de precios" class="menu-img" loading="lazy">
+  </section>
+
+  <!-- MENÚ DE TOPPINGS -->
+  <section class="menu-section">
+    <h2>Toppings Disponibles</h2>
+    <img src="menu2.jpg" alt="Menú de toppings" class="menu-img" loading="lazy">
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Pequeñas Tentaciones - Rionegro, Santander</p>
+    <p>Entregas a domicilio</p>
+  </footer>
+</body>
+</html>
